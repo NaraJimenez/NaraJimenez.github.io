@@ -16,6 +16,8 @@
   width: 250px;
 }
 
+
+
 :root {
   --bs-blue: #1D809F;
   --bs-indigo: #6610f2;
@@ -11423,7 +11425,7 @@ html {
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
-
+/*
 .callout {
   padding: 15rem 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
@@ -11436,7 +11438,7 @@ html {
   font-weight: 700;
   display: block;
   max-width: 30rem;
-}
+}*/
 
 footer.footer {
   padding-top: 5rem;
@@ -11481,7 +11483,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/img/fondo.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11558,8 +11560,10 @@ footer.footer .social-link:hover {
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
+
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: #9BA1E6;
+    /*rgba(29, 128, 159, 0.9)*/
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
