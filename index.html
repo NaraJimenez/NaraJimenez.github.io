@@ -52,7 +52,7 @@
                 <a href="https://www.linkedin.com/in/nara-j-b795551b8/"><i class='bx bxl-linkedin'></i></a>
                 <a href="mailto:narajimenez@gmail.com"><i class='bx bx-envelope'></i></a>
             </div>
-            <a href="ruta-del-archivo/mi-cv.pdf" class="btn" download>Descarga CV</a>
+            <a href="ruta-del-archivo/mi-cv.pdf" class="btn" download  onclick="playSound()">Descarga CV</a>
         </div>
 
         <div class="home-img">
@@ -115,7 +115,7 @@
                         <div><i class='bx bxl-vuejs' ></i></div>
                         <div><i class='bx bxl-javascript' ></i></div>
                     </div>
-                    <a href="./Actividades.html" class="btn">Actividades M06</a>
+                    <a href="./Actividades.html" class="btn" onclick="playSound()" >Actividades M06</a>
             </div>
 
             <div class="services-box">
@@ -238,6 +238,9 @@
 
     <!--Galeria de animacion Typed.js-->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--Audio-->
+    <audio id="myAudio" src="./music/Bike.wav" preload="auto"></audio>
 
     <!--Script de JS-->
     <script src="js/script.js"></script>

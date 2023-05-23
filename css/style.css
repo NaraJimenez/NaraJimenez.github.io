@@ -295,6 +295,7 @@ span {
     display: flex;
     justify-content: center;
     margin-top: 2rem; /* Espacio superior entre los iconos y el contenido anterior */
+    margin-bottom: 2rem;
 }
 
 #iconosLeng div {

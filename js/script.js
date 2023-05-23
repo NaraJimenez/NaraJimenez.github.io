@@ -61,3 +61,9 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+/*Musica */
+function playSound() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
