@@ -389,6 +389,13 @@ span {
     margin-bottom: 3rem;
 }
 
+.video > div.video-content {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
