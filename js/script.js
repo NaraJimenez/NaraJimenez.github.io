@@ -62,8 +62,37 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-/*Musica */
+/*MUSICA */
 function playSound() {
     var audio = document.getElementById("myAudio");
     audio.play();
   }
+
+/*VIDEO INTERACTIVO */
+var myvideo = document.getElementById('myvideo'),
+    playbutton = document.getElementById('playme'),
+    opuno = document.getElementById('opUno'),
+    opdos = document.getElementById('opDos');
+
+// Opción 1
+opuno.addEventListener("click", function(event) {
+    event.preventDefault();
+    myvideo.currentTime = 21.8; // Detenerse en el minuto 1 (60 segundos)
+    myvideo.play();
+});
+
+// Opción 2
+opdos.addEventListener("click", function(event) {
+    event.preventDefault();
+    myvideo.currentTime = 131; // Detenerse en el minuto 2 (120 segundos)
+    myvideo.play();
+});
+
+// Play/pausa
+playbutton.addEventListener("click", function() {
+    if (myvideo.paused) {
+        myvideo.play();
+    } else {
+        myvideo.pause();
+    }
+});
