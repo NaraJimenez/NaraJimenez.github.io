@@ -1,171 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Nara Jimenez - Web Personal</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/webAppEnBlanc/style/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Menú</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Inicio</a></li>
-                <li class="sidebar-nav-item"><a href="#about">Sobre mi</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Lenguages de Programación</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <title>Nara Jimenez - Web Personal</title>
+
+    <!--Iconos Box-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Iconos de boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <a href="#home" class="logo">Nara Jimenez</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#services">Mis Habilidades</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#video">Video</a>
+            <a href="#contact">Contacto</a>
         </nav>
+    </header>
 
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Bienvenidos a mi portfolio personal</h1>
-                <h3 class="mb-5"><em>Aqui guardo todas las actividades realizadas en DWEC</em></h3>
-                <a class="btn btn-primary btn-xl" href="#portfolio">Ver actividades</a>
+    <!--Sección Inicio-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola, me llamo</h3>
+            <h1>Nara Jimenez</h1>
+            <h3>Y soy <span class="multiple-text"></span> </h3>
+            <p>Bienvenido a mi portfolio personal, aquí encontrarás actividades y 
+                proyectos creados<br> durante mi trayectoria de estudiante de DAW en el 
+                Centre d'Estudis Politècnics.
+            </p>
+
+            <div class="social-media">
+                <!--<a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>-->
+                <a href="https://github.com/NaraJimenez"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/nara-j-b795551b8/"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:narajimenez@gmail.com"><i class='bx bx-envelope'></i></a>
             </div>
-        </header>
+            <a href="ruta-del-archivo/mi-cv.pdf" class="btn" download>Descarga CV</a>
+        </div>
 
-        <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Hola, soy Nara Jimenez!</h2>
-                        <p class="lead mb-5">
-                            Actualmente estoy en segundo curso de Grado Superior en Desarrollo Web. 
-                            Como futura Informatica me encanta trabajar en equipo y crear programas.
-                            Pasate por mi Github para ver todo mi trabajo!
-                        </p>
-                        <a class="btn btn-dark btn-xl" href="https://github.com/NaraJimenez">Github</a>
-                    </div>
+        <div class="home-img">
+            <img src="./images/Logo.png" alt="">
+
+        </div>
+
+    </section>
+
+    <!--Section sobre mi-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/Logo Grande.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mi</span></h2>
+            <h3>Web Developer</h3>
+            <p>
+                Estoy finalizando mi segundo año de Ciclo Superior en Desarrollo de Aplicaciones Web en el Centro d'Estudis Politécnics de Barcelona. 
+                Me gusta tanto el Back-end como el Front-end, además me encanta aprender nuevos lenguajes mientras creo nuevos proyectos.
+                <br>
+                <br>
+                Para saber más sobre mí, visita mis redes sociales ¡Nos vemos!
+            </p>
+            <!--<a href="" class="btn">Ver Linkedin</a>-->
+            <div class="soft-skills">
+                <div data-message="Trabajo en equipo"><i class="bi bi-people-fill"></i></div>
+                <div data-message="Creatividad"><i class="bi bi-pencil-fill"></i></div>
+                <div data-message="Capacidad Analítica"><i class="bi bi-file-earmark-bar-graph"></i></div>
+                <div data-message="Flexibilidad"><i class="bi bi-clock"></i></div>
+                <div data-message=" Capacidad Resolutiva"><i class="bi bi-check2-circle"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Mis Habilidades-->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>Habilidades</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Back-End</h3>
+                <p>Concimientos de Back-End en Php, Java, Laravel, APIs, Node.js </p>
+                    <!--<a href="" class="btn">Read More</a>-->
+                <div id="iconosLeng">
+                    <div><i class='bx bxl-php' ></i></div>
+                    <div><i class='bx bxl-java' ></i></div>
+
                 </div>
             </div>
-        </section>
 
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Formación</h3>
-                    <h2 class="mb-5">Lenguajes de Programación</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>HTML</strong></h4>
-                        <p class="text-faded mb-0">Princialmente he trabajdo con HTML5</p>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Front-End</h3>
+                <p>Conociminentos en JavaScript, Vue, HTML, CSS y Boostrap 5 </p>
+                    <div id="iconosLeng">
+                        <div><i class='bx bxl-html5'></i></div>
+                        <div><i class='bx bxl-vuejs' ></i></div>
+                        <div><i class='bx bxl-javascript' ></i></div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>CSS</strong></h4>
-                        <p class="text-faded mb-0">Además de tener conceptos en Boostrap 5</p>
+                    <a href="./Actividades.html" class="btn">Actividades M06</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-network-chart' ></i>
+                <h3>Data</h3>
+                <p>LEn conocimiento sobre Data y sus base de datos: MongoDB, mySql, Workbench, PHPMyAdmin</p>
+                    <!--<a href="" class="btn">Read More</a>-->
+                    <div id="iconosLeng">
+                        <div><i class="bi bi-filetype-sql"></i></div>
+                        <div><i class='bx bxl-mongodb' ></i></div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>JAVA</strong></h4>
-                        <p class="text-faded mb-0">
-                            Aprendido durante el primer año del Grado Superior
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>PHP</strong></h4>
-                        <p class="text-faded mb-0">Desarrollado los últimos proyectos realizados en grupo</p>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Últimos <span>Proyectos</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/prueba.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Laberito en JS</h4>
+                    <p>Primer juego dentro del proyecto EcHotel, realizado principalmente con PHP, JavaScript y Mysql.</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        </section>
-
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Actividades Recientes</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/webAppEnBlanc/Ejercicio1.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h3">Entono de Programación</div> 
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/webAppEnBlanc/media/img/chess.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/webAppEnBlanc/Ejercicio2.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h3">Introducción a la Programación Web</div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/webAppEnBlanc/media/img/chess.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/webAppEnBlanc/Ejercicio3.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h3">Objetos de JavaScript</div> 
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/webAppEnBlanc/media/img/chess.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/webAppEnBlanc/Ejercicio4.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h3">Objetos Propios</div> 
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/webAppEnBlanc/media/img/chess.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/webAppEnBlanc/Ejercicio5.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h3">Eventos en JavaScript</div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/webAppEnBlanc/media/img/chess.jpg" alt="..." />
-                        </a>
-                    </div>
+            <div class="portfolio-box">
+                <img src="images/prueba.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Broggi 112</h4>
+                    <p>Proyecto en grupo realizado para el Ins Broggi. Pequeña applicación de simulación de la app del 112. Realizado con Laravel 9, Vue 3 y Mysql.</p>
+                    <a href="https://github.com/NaraJimenez/Broggi112"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        </section>
-       
-        <!-- Footer-->
-        <footer class="footer text-center bg-primary text-white">
-            <div class="container px-4 px-lg-5">
-                <p class="mb-0">Copyright &copy; Nara Jimenez 2022</p>
+            <div class="portfolio-box">
+                <img src="images/prueba.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Pokedex</h4>
+                    <p>Primer proyecto creado en PHP, utilizando sesiones y la manipulacion de la Base de Datos, con Mysql.</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
-        </footer>
+            <div class="portfolio-box">
+                <img src="images/prueba.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Menu Components</h4>
+                    <p>Aplicación realizada con componentes de Vue 3 con JavaScript Vanilla.</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/prueba.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>ABP - Larevel 9 y Vue 3</h4>
+                    <p>Proyecto creado en PHP, con Apis, Controladores, Modales, Eloquent, Laravel y Vue. Es una pequeña aplicación para gestionar 
+                        los cursos y ciclos del Centre D'Estudis Politecnics, se utilizada para ello CRUD.</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/prueba.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Buscador de Ghiphy</h4>
+                    <p>Buscador de gifs, realizado a partir de JavaScript y consultas a Api de Ghiphy.</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <!--Video-->
+    <section class="video" id="video">
+        <h2 class="heading">Video <span>Interactivo</span></h2>
+        <div>
+            <h1 style="text-align: center;">¡Video Interactivo  realizado con JavaScript escoge a partir de que punto quieres verlo!</h1> 
+        </div>
+        
+        <div class="video-content">
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+        <div id="botones" style="text-align: center;">
+            <button class="btn" style="margin-right: 20px;">Opcion 1</button>
+            <button class="btn">Opcion 2</button>
+        </div>
+         
+    </section>
 
-        <!-- Core theme JS-->
-        <script src="/webAppEnBlanc/js/scripts.js"></script>
-    </body>
+    <!--Contacto-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacta <span>Conmigo!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Numero Telefono">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Nara Jimenez Martos | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!--ScrollReveal - Libreria de JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Galeria de animacion Typed.js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--Script de JS-->
+    <script src="js/script.js"></script>
+</body>
 </html>
