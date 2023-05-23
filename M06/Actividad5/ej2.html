@@ -30,12 +30,38 @@
     </header>
 
     <section class="actividad01">
-        <h2 class="heading"><span>01</span> - Entorno de Programación</h2>
+        <h2 class="heading"><span>05</span> - Eventos de JavaScript 1.2</h2>
         <br><br><br><br><br>
         <div>
-            <h1>01 - Gestió Documental i estàndards</h1>
-            <br>
-            <script async src="//jsfiddle.net/NaraJimenez/eu3yjkwp/57/embed/"></script>
+            <h2>Lista de tareas - Propositos de Año Nuevo</h2>
+                        <hr>
+                        <br>
+                        <p>Añade propositos de año nuevo y cumplelos antes del 31 de Diciembre de 2023, ¡antes de las 12 de la noche!</p>
+                        <h1 id="cuentaAtras" class=""></h1>
+                        <br>
+                        <div class="todo">
+                            <section>
+                                <form id="form">
+                                    <p>
+                                        <label for="title">
+                                            <span>Nuevo Proposito<strong><abbr title="required">*</abbr></strong></span>
+                                            <input type="text" id="title" name="title"  />
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label for="content">
+                                            <span>Detalles </span>
+                                            <input type="text" id="content" name="content" />
+                                        </label>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <button id="add-task" type="button">Añadir</button>
+                                    </p>
+                                </form>
+                            </section>
+                        </div>
+                        <div id="todos"></div>
         </div>
     </section>
 
@@ -59,5 +85,6 @@
 
     <!--Script de JS-->
     <script src="/js/script.js"></script>
+    <script src="/js/js2.js"></script>
 </body>
 </html>
