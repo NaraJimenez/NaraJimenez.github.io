@@ -497,6 +497,10 @@ span {
         min-height: auto;
     }
 
+    .video {
+        min-height: auto;
+    }
+
     .footer {
         padding: 2rem 3%;
     }
@@ -591,6 +595,10 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+
+    .video > div.video-content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 365px){
@@ -613,8 +621,10 @@ span {
 }
 
 /*ELEMENTOS DE LAS PAGINAS ACTIVIDADES DE JS*/
-.bodyActividades, .actividad01 {
+.bodyActividades{
     margin-top: 35px;
+    display: flex;
+    justify-content: center;
 }
 #botonesActividades {
     column-count: 2;
