@@ -68,6 +68,12 @@ function playSound() {
     audio.play();
   }
 
+//2n sound
+function playSound2() {
+    var audio = document.getElementById("myAudio2");
+    audio.play();
+}
+
 /*VIDEO INTERACTIVO */
 var myvideo = document.getElementById('myvideo'),
     playbutton = document.getElementById('playme'),
