@@ -69,10 +69,14 @@ function playSound() {
   }
 
 //2n sound
-function playSound2() {
+function playSound2(event) {
+    event.preventDefault();
+    window.location.href = event.target.href;
+  }
     var audio2 = document.getElementById("myAudio2");
-    audio2.play();
-}
+    audio2.oncanplaythrough = function() {
+        audio2.play();
+      };
 
 /*VIDEO INTERACTIVO */
 var myvideo = document.getElementById('myvideo'),
