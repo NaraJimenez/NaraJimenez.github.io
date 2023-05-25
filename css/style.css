@@ -644,3 +644,12 @@ span {
     text-overflow: ellipsis; /* Agregar puntos suspensivos si el texto excede el ancho */
 }
 
+/*Elementos centrados en el div 05*/
+.centered-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Opcional: ajusta la altura según tus necesidades */
+}  
+
