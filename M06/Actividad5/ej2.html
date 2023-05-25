@@ -30,35 +30,37 @@
     </header>
 
     <section class="actividad01">
-        <h2 class="heading"><span>05</span> - Actividad 1.2</h2>
+        <h2 class="heading"><span>05</span> - Actividad 5.2</h2>
         <br><br><br><br><br>
         <div style="text-align: center;">
-            <h2>Propositos de Año Nuevo: Añade propositos de año nuevo y cumplelos antes del 31 de Diciembre de 2023, ¡antes de las 12 de la noche!</h2>
-                <hr>
-                <br>
-                <h1 id="cuentaAtras" style="font-weight: 400;"></h1>
+            <h2>Propósitos de Año Nuevo: Añade propósitos de año nuevo y cúmplelos antes del 31 de Diciembre de 2023, ¡antes de las 12 de la noche!</h2>
+            <hr>
+            <br>
+            <h1 id="cuentaAtras" style="font-weight: 400;"></h1>
+            <br><br>
+            <div class="todo">
+                <form id="form">
+                    <p>
+                        <label for="title">
+                            <h1><span>Nuevo Propósito<strong><abbr title="required">*</abbr></strong></span></h1>
+                            <input type="text" id="title" name="title" style="border: 2px solid #63c8e1; border-radius: 10px;" />
+                        </label>
+                    </p>
+                    <br><br>
+                    <p>
+                        <label for="content">
+                            <h1><span>Detalles</span></h1>
+                            <input type="text" id="content" name="content" style="border: 2px solid #63c8e1; border-radius: 10px;" />
+                        </label>
+                    </p>
+                    <br><br>
+                    <p>
+                        <button id="add-task" class="btn" type="button">AÑADIR</button>
+                    </p>
+                </form>
                 <br><br>
-                <div class="todo">
-                    <form id="form">
-                        <p>
-                            <label for="title">
-                            <h1><span>Nuevo Proposito<strong><abbr title="required">*</abbr></strong></span></h1>
-                                <input type="text" id="title" name="title" style="border: 2px solid #63c8e1; border-radius: 10px;" />
-                            </label>
-                        </p>
-                        <p>
-                            <label for="content">
-                                <h1><span>Detalles </span></h1>
-                                <input type="text" id="content" name="content" style="border: 2px solid #63c8e1; border-radius: 10px;"/>
-                            </label>
-                        </p>
-                        <br><br>
-                        <p>
-                            <button id="add-task" class="btn" type="button">Añadir</button>
-                        </p>
-                    </form><div id="todos"></div>
-                </div>
-                
+                <div id="todos"></div>
+            </div>
         </div>
     </section>
 

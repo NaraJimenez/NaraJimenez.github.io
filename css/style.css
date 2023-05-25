@@ -213,6 +213,7 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    
 }
 
 .btn.selected {
@@ -651,5 +652,14 @@ span {
     justify-content: center;
     align-items: center;
     height: 50vh; /* Opcional: ajusta la altura según tus necesidades */
-}  
+}
 
+/*Actividad 05.2*/
+.todo-item {
+    display: inline-block;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
