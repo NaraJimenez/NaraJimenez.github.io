@@ -71,13 +71,19 @@ function playSound() {
 //2n sound
 function playSound2(event) {
     event.preventDefault();
-    window.location.href = event.target.href;
-
     var audio2 = document.getElementById("myAudio2");
-    audio2.oncanplaythrough = function() {
-        audio2.play();
+
+    audio2.onended = function() {
+        window.location.href = event.target.href;
     };
+
+    audio2.play().catch(function(error) {
+        console.log("Error al reproducir el sonido:", error);
+        window.location.href = event.target.href;
+    });
 }
+
+
 /*VIDEO INTERACTIVO */
 var myvideo = document.getElementById('myvideo'),
     playbutton = document.getElementById('playme'),
