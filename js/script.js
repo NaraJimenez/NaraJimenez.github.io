@@ -71,8 +71,16 @@ function playSound() {
 /*VIDEO INTERACTIVO */
 var myvideo = document.getElementById('myvideo'),
     playbutton = document.getElementById('playme'),
+    inicio = document.getElementById('inicio');
     opuno = document.getElementById('opUno'),
     opdos = document.getElementById('opDos');
+
+//Inicio
+inicio.addEventListener("click", function(event) {
+    event.preventDefault();
+    myvideo.currentTime = 0; // Detenerse en el minuto 1 (60 segundos)
+    myvideo.play();
+});
 
 // Opción 1
 opuno.addEventListener("click", function(event) {
