@@ -70,8 +70,8 @@ function playSound() {
 
 //2n sound
 function playSound2() {
-    var audio = document.getElementById("myAudio2");
-    audio.play();
+    var audio2 = document.getElementById("myAudio2");
+    audio2.play();
 }
 
 /*VIDEO INTERACTIVO */
