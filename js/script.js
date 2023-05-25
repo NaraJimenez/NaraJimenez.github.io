@@ -66,17 +66,17 @@ const typed = new Typed('.multiple-text', {
 function playSound() {
     var audio = document.getElementById("myAudio");
     audio.play();
-  }
+}
 
 //2n sound
 function playSound2(event) {
     event.preventDefault();
     window.location.href = event.target.href;
-  
+
     var audio2 = document.getElementById("myAudio2");
     audio2.oncanplaythrough = function() {
         audio2.play();
-      };
+    };
 }
 /*VIDEO INTERACTIVO */
 var myvideo = document.getElementById('myvideo'),
@@ -85,32 +85,47 @@ var myvideo = document.getElementById('myvideo'),
     opuno = document.getElementById('opUno'),
     opdos = document.getElementById('opDos');
 
-//Inicio
+// Inicio
 inicio.addEventListener("click", function(event) {
     event.preventDefault();
-    myvideo.currentTime = 0; // Detenerse en el minuto 1 (60 segundos)
+    removeSelectedClass();
+    inicio.classList.add("selected");
+    myvideo.currentTime = 0;
     myvideo.play();
 });
 
 // Opción 1
 opuno.addEventListener("click", function(event) {
     event.preventDefault();
-    myvideo.currentTime = 21.8; // Detenerse en el minuto 1 (60 segundos)
+    removeSelectedClass();
+    opuno.classList.add("selected");
+    myvideo.currentTime = 21.8;
     myvideo.play();
 });
 
 // Opción 2
 opdos.addEventListener("click", function(event) {
     event.preventDefault();
-    myvideo.currentTime = 131; // Detenerse en el minuto 2 (120 segundos)
+    removeSelectedClass();
+    opdos.classList.add("selected");
+    myvideo.currentTime = 131;
     myvideo.play();
 });
+
+function removeSelectedClass() {
+    var buttons = document.getElementsByClassName("btn");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("selected");
+    }
+}
 
 // Play/pausa
 playbutton.addEventListener("click", function() {
     if (myvideo.paused) {
         myvideo.play();
+      playbutton.classList.add("selected"); // Agrega la clase "selected" al botón de reproducción
     } else {
         myvideo.pause();
+      playbutton.classList.remove("selected"); // Quita la clase "selected" del botón de reproducción
     }
-});
+    });

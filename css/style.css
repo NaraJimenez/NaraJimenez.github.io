@@ -215,6 +215,10 @@ span {
     transition: .5s ease;
 }
 
+.btn.selected {
+    background-color: rgb(188, 71, 198);
+}
+
 .btn:hover {
     box-shadow: none;
 }
