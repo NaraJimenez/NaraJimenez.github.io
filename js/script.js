@@ -128,10 +128,12 @@ function removeSelectedClass() {
 // Play/pausa
 playbutton.addEventListener("click", function() {
     if (myvideo.paused) {
+        removeSelectedClass();
         myvideo.play();
-      playbutton.classList.add("selected"); // Agrega la clase "selected" al botón de reproducción
+        playbutton.classList.add("selected"); // Agrega la clase "selected" al botón de reproducción
     } else {
+        removeSelectedClass();
         myvideo.pause();
-      playbutton.classList.remove("selected"); // Quita la clase "selected" del botón de reproducción
+        playbutton.classList.remove("selected"); // Quita la clase "selected" del botón de reproducción
     }
     });

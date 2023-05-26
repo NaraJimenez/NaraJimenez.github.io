@@ -217,7 +217,7 @@ span {
 }
 
 .btn.selected {
-    background-color: rgb(188, 71, 198);
+    background-color: #C56BC7;
 }
 
 .btn:hover {
@@ -577,6 +577,10 @@ span {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .video-content {
+        grid-template-columns:  1fr;
+    }
+
     #botonesActividades {
         column-count: 1; /* Cambiar a una sola columna en pantallas más pequeñas */
     }
@@ -589,6 +593,9 @@ span {
 
 @media (max-width: 617px){
     .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .video-content {
         grid-template-columns: 1fr;
     }
 }
@@ -663,4 +670,8 @@ span {
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+video#myvideo {
+    border-radius: 10px;
 }
